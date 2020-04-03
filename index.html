@@ -34,24 +34,24 @@
   
   <script>
     console.log("Things print");
-    $("#useless_button").on("click", console.log("This should be activating?"));
-    $("#useless_button").on("click", DisplayTime);
+//     $("#useless_button").on("click", console.log("This should be activating?"));
+//     $("#useless_button").on("click", DisplayTime);
     
-    function DisplayTime() {
-      console.log("This is happening");
-      $("#only_div").text(time);
-    }
+//     function DisplayTime() {
+//       console.log("This is happening");
+//       $("#only_div").text(time);
+//     }
     
-      /* This gets called when they click the button */
-    function RecordIt() {
-      time = new Date();
-      var entry = {
-          number: 5,
-          me: "Sebastian!",
-          time = time
-        };
-      $.post("https://github.com/SebastianHolt/testing/edit/master/save.php", entry);
-      }
+//       /* This gets called when they click the button */
+//     function RecordIt() {
+//       time = new Date();
+//       var entry = {
+//           number: 5,
+//           me: "Sebastian!",
+//           time = time
+//         };
+//       $.post("https://github.com/SebastianHolt/testing/edit/master/save.php", entry);
+//       }
     
     </script>
 </html>
