@@ -31,4 +31,21 @@
       </button>
     </div>
   </body>
+  
+  <script>
+      $("#startExperimentButton").on("click", RecordIt);
+    
+      /* This gets called when they click the button */
+    
+      function RecordIt() {
+        time = new Date();
+        var entry = {
+          number: 5,
+          me: "Sebastian!",
+          time = time
+        };
+        $.post("https://github.com/SebastianHolt/testing/edit/master/save.php", entry);
+      }
+    
+    </script>
 </html>
