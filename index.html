@@ -33,18 +33,21 @@
   </body>
   
   <script>
-      $("#startExperimentButton").on("click", RecordIt);
+    $("#startExperimentButton").on("click", DisplayTime);
+    
+    function DisplayTime() {
+      $("#only_div").text(time);
+    }
     
       /* This gets called when they click the button */
-    
-      function RecordIt() {
-        time = new Date();
-        var entry = {
+    function RecordIt() {
+      time = new Date();
+      var entry = {
           number: 5,
           me: "Sebastian!",
           time = time
         };
-        $.post("https://github.com/SebastianHolt/testing/edit/master/save.php", entry);
+      $.post("https://github.com/SebastianHolt/testing/edit/master/save.php", entry);
       }
     
     </script>
